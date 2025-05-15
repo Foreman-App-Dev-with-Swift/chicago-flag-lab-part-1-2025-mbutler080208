@@ -41,31 +41,41 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        ZStack {
             Rectangle()
-                .foregroundColor(Color(hue: 0.58, saturation: 0.624, brightness: 0.747, opacity: 0.684))
-                .frame(width: 390, height: 50)
-            HStack {
-                Image("chicagoStar")
-                    .resizable()
-                    .foregroundColor(.red)
-                    .frame(width: 70.0, height: 70.0)
-                Image("chicagoStar")
-                    .resizable()
-                    .foregroundColor(.red)
-                    .frame(width: 70.0, height: 70.0)
-                Image("chicagoStar")
-                    .resizable()
-                    .foregroundColor(.red)
-                    .frame(width: 70.0, height: 70.0)
-                Image("chicagoStar")
-                    .resizable()
-                    .foregroundColor(.red)
-                    .frame(width: 70.0, height: 70.0)
-                Image("chicagoStar")
-                    .resizable()
-                    .foregroundColor(.red)
-                    .frame(width: 70.0, height: 70.0)
+            VStack {
+                Rectangle()
+                    .foregroundColor(Color.white)
+                    .frame(width: 390, height: 50)
+                Rectangle()
+                    .foregroundColor(Color(hue: 0.581, saturation: 0.452, brightness: 0.902, opacity: 0.844))
+                    .frame(width: 390, height: 50)
+                    .frame(width: 390, height: 50)
+                HStack(alignment: .top) {
+                    Image("chicagoStar")
+                        .resizable()
+                        .foregroundColor(.red)
+                        .frame(width: 70.0, height: 70.0)
+                    Image("chicagoStar")
+                        .resizable()
+                        .foregroundColor(.red)
+                        .frame(width: 70.0, height: 70.0)
+                    Image("chicagoStar")
+                        .resizable()
+                        .foregroundColor(.red)
+                        .frame(width: 70.0, height: 70.0)
+                    Image("chicagoStar")
+                        .resizable()
+                        .foregroundColor(.red)
+                        .frame(width: 70.0, height: 70.0)
+                }
+                Rectangle()
+                    .foregroundColor(Color(hue: 0.581, saturation: 0.452, brightness: 0.902, opacity: 0.844))
+                    .frame(width: 390, height: 50)
+                Rectangle()
+                    .foregroundColor(Color.white)
+                    .frame(width: 390, height: 50)
+                
                 
             }
         }
