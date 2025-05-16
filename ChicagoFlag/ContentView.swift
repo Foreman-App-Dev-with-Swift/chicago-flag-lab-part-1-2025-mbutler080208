@@ -45,33 +45,52 @@ struct ContentView: View {
             Rectangle()
             VStack {
                 Rectangle()
+                    .padding(/*@START_MENU_TOKEN@*/EdgeInsets()/*@END_MENU_TOKEN@*/)
                     .foregroundColor(Color.white)
-                    .frame(width: 390, height: 50)
+                    .frame(width: 390, height: 60
+                    )
                 Rectangle()
+                    .padding(-10.0)
                     .foregroundColor(Color(hue: 0.581, saturation: 0.452, brightness: 0.902, opacity: 0.844))
-                    .frame(width: 390, height: 50)
-                    .frame(width: 390, height: 50)
-                HStack(alignment: .top) {
-                    Image("chicagoStar")
-                        .resizable()
-                        .foregroundColor(.red)
-                        .frame(width: 70.0, height: 70.0)
-                    Image("chicagoStar")
-                        .resizable()
-                        .foregroundColor(.red)
-                        .frame(width: 70.0, height: 70.0)
-                    Image("chicagoStar")
-                        .resizable()
-                        .foregroundColor(.red)
-                        .frame(width: 70.0, height: 70.0)
-                    Image("chicagoStar")
-                        .resizable()
-                        .foregroundColor(.red)
-                        .frame(width: 70.0, height: 70.0)
+                    .frame(width: 450, height: 60
+                    )
+        
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(Color.white)
+                        .frame(width: 390, height: 130
+                        )
+                        
+                    HStack(alignment: .top) {
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0 , height:55.0)
+                            .padding()
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0, height:55.0)
+                            .padding()
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0 , height:55.0)
+                            .padding()
+                        
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                        .frame(width: 55.0 , height:55.0) 
+                        .padding()
+                    }
                 }
                 Rectangle()
+                    .padding(-10.0)
                     .foregroundColor(Color(hue: 0.581, saturation: 0.452, brightness: 0.902, opacity: 0.844))
-                    .frame(width: 390, height: 50)
+                    .frame(width: 390, height: 60
+                      
+                    )
                 Rectangle()
                     .foregroundColor(Color.white)
                     .frame(width: 390, height: 50)
