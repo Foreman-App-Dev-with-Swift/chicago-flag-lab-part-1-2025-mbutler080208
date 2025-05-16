@@ -41,12 +41,62 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        ZStack {
             Rectangle()
-                .foregroundColor(.orange)
-                .frame(width: 50, height: 50)
-            Image("chicagoStar")
-                .foregroundColor(.gray)
+            VStack {
+                Rectangle()
+                    .padding(/*@START_MENU_TOKEN@*/EdgeInsets()/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(Color.white)
+                    .frame(width: 390, height: 60
+                    )
+                Rectangle()
+                    .padding(-10.0)
+                    .foregroundColor(Color(hue: 0.581, saturation: 0.452, brightness: 0.902, opacity: 0.844))
+                    .frame(width: 450, height: 60
+                    )
+        
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(Color.white)
+                        .frame(width: 390, height: 130
+                        )
+                        
+                    HStack(alignment: .top) {
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0 , height:55.0)
+                            .padding()
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0, height:55.0)
+                            .padding()
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0 , height:55.0)
+                            .padding()
+                        
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                        .frame(width: 55.0 , height:55.0) 
+                        .padding()
+                    }
+                }
+                Rectangle()
+                    .padding(-10.0)
+                    .foregroundColor(Color(hue: 0.581, saturation: 0.452, brightness: 0.902, opacity: 0.844))
+                    .frame(width: 390, height: 60
+                      
+                    )
+                Rectangle()
+                    .foregroundColor(Color.white)
+                    .frame(width: 390, height: 50)
+                
+                
+            }
         }
     }
 }
