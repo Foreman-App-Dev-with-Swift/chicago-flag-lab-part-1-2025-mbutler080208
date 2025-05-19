@@ -41,12 +41,63 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        ZStack {
             Rectangle()
-                .foregroundColor(.orange)
-                .frame(width: 50, height: 50)
-            Image("chicagoStar")
-                .foregroundColor(.gray)
+            VStack {
+                Rectangle()
+                    .padding(/*@START_MENU_TOKEN@*/EdgeInsets()/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(Color.white)
+                    .frame(width: 405, height: 60
+                    )
+                Rectangle()
+                    .padding(-10.0)
+                    .foregroundColor(Color(hue: 0.581, saturation: 0.452, brightness: 0.902, opacity: 0.844))
+                    .frame(width: 405, height: 50)
+                    
+                    .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.415, green: 0.598, blue: 0.76)/*@END_MENU_TOKEN@*/)
+        
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(Color.white)
+                        .frame(width: 450, height: 130
+                        )
+                        
+                    HStack() {
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0 , height:55.0)
+                            .padding(.leading, -16.0)
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0, height:55.0)
+                            .padding(.horizontal)
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0 , height:55.0)
+                            .padding(.trailing, -4.0)
+                        
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 55.0 , height:55.0)
+                            .padding(.leading, 30.0)
+                    }
+                }
+                Rectangle()
+                    .padding(-10.0)
+                    .foregroundColor(Color(hue: 0.581, saturation: 0.452, brightness: 0.902, opacity: 0.844))
+                    .frame(width: 405, height: 50)
+                      
+                    
+                Rectangle()
+                    .foregroundColor(Color.white)
+                    .frame(width: 405, height: 50)
+                
+                
+            }
         }
     }
 }
